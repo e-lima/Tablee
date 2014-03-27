@@ -1,0 +1,105 @@
+/* Styles go here */
+
+body {
+  font-family: verdana;
+  font-size: 13px;
+}
+
+.clear {
+  clear: both;
+}
+
+.tablee {
+  box-sizing: border-box;
+}
+
+.tablee .tb-header {
+  border-bottom: 2px solid silver;
+}
+
+.tablee .tb-content .tb-row {
+  clear: both;
+  border-bottom: 1px solid gainsboro;
+}
+
+.tablee .tb-content .tb-row:hover {
+  background-color: #ddd;
+}
+
+
+.tablee .tb-content .tb-selected {
+  background-color: #eef;
+}
+.tablee .tb-content .tb-selected:hover {
+  background-color: #ccd;
+}
+
+.tablee .tb-content .tb-row .tb-col {
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+
+.tablee .tb-content .tb-row .tb-row-action {
+  float: right;
+  display: none;
+  padding: 0px 5px;
+}
+
+.tablee .tb-content .tb-row:hover .tb-row-action {
+  display: block;
+}
+
+.tablee .tb-content .tb-row .tb-col:hover {
+  background-color: #e7e7e7;
+  /*box-shadow: 0px 0px 6px 0px #666 ;
+  /*border-radius: 3px;*/
+}
+
+.tablee .tb-content .tb-row.tb-selected .tb-col:hover {
+  background-color: #dde;
+  /*box-shadow: 0px 0px 6px 0px #666 ;
+  /*border-radius: 3px;*/
+}
+
+.tablee .tb-header,
+.tablee .tb-content,
+.tablee .tb-footer
+{
+  clear: both;
+}
+
+.tablee .tb-col.header {
+  font-weight: bold;
+  cursor: pointer;
+  min-height: 30px;
+  line-height: 30px;
+  -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+  -moz-user-select: none; /* mozilla browsers */
+  -khtml-user-select: none; /* webkit (konqueror) browsers */
+  -ms-user-select: none; /* IE10+ */
+}
+
+.tablee .tb-col.header.orderby-desc:before {
+  content: '\25BC';
+  color: #b33;
+}
+
+.tablee .tb-col.header.orderby-asc:before {
+  content: '\25B2';
+  color: #3b3;
+}
+
+.tablee .tb-col-rownum {
+  text-align: right;
+}
+
+.tablee .tb-col {
+  box-sizing: border-box;
+  float: left;
+  padding: 2px;
+}
+
+.tablee .tb-col.header .tb-btn-pin {
+  margin-left: auto;
+  margin-right: 0px;
+}
